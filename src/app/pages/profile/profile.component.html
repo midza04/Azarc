@@ -1,0 +1,55 @@
+<div class="m-top">
+  <mat-card class="align-content-center">
+    <form [formGroup]="userForm" >
+    <div class="mrgin">
+    <div class="row">
+      <div class="col-sm-2">Name</div>
+      <div class="col-sm-8">
+        <input [formControlName]="'name'" [disabled]="true" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Surname</div>
+      <div class="col-sm-8"> <input [formControlName]="'surname'" class="form-control"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">Username</div>
+      <div class="col-sm-8"> <input [formControlName]="'name'" class="form-control"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">ID</div>
+      <div class="col-sm-8"> <input [formControlName]="'id'" class="form-control"></div>
+    </div>
+      <div class="row">
+        <div class="col-sm-2">Address</div>
+        <div class="col-sm-8"> <input [formControlName]="'address'" class="form-control"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">Location</div>
+        <div class="col-sm-8"> <input [formControlName]="'location'" class="form-control"></div>
+      </div>
+      <hr>
+      <div class="row">
+        <h3>Update Your Details</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">Residential Address</div>
+        <div class="col-sm-8"> <input [formControlName]="'addressEdit'" class="form-control"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">Location</div>
+        <div class="col-sm-8"> <select [formControlName]="'locationEdit'" class="form-control">
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Cape Town">Cape Town</option>
+          <option value="London">London</option>
+
+        </select>
+        </div>
+      </div>
+      <div class="row">
+        <button (click)="updateProfile()" class="col-sm-2" mat-button mat-raised-button color="primary">Update Profile</button>
+      </div>
+    </div>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+  <div class="row w-100">
+    <div class="col-sm-7">
+  <mat-card-header>
+      <mat-card-title class="m-top" >Logged In User : {{socialUser.name}}</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+    </div>
+    <div class="col-sm-4">
+  <mat-card-actions>
+    <button RouterLink="/profile" (click)="goToProfile()" mat-raised-button color="accent">EDIT PROFILE</button>
+  </mat-card-actions>
+    </div>
+  </div>
+</mat-card>
